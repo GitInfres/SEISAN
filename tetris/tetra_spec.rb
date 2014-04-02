@@ -51,9 +51,9 @@ describe Tetra do
             [0,0,0,0]]
       # tetra z
       tetra_z = [[0,0,0,0],
-            [0,0,0,0],
+            [1,1,0,0],
             [0,1,1,0],
-            [0,0,1,1]]
+            [0,0,0,0]]
 
       liste_tetras = Array.new()
       liste_tetras.push(tetra_j)
