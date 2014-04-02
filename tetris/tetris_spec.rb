@@ -24,4 +24,12 @@ describe Tetris do
             end
         end
     end
+    describe Rules do
+        it "Full rows" do
+
+        end
+        it "Clear full rows" do
+            
+        end
+    end
 end
