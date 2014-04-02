@@ -22,8 +22,10 @@ describe "Tetris" do
         end
         it "Speed down" do
             tetris = Tetris.new
-            tetris.fall_speed_on.should eq(11)
-            tetris.fall_speed_off.should eq(1)
+            tetris.fall_speed_on
+            tetris.get_game_speed.should eq(11)
+            tetris.fall_speed_off
+            tetris.get_game_speed.should eq(1)
         end
         describe "Possibility" do
             it "Can move left" do
