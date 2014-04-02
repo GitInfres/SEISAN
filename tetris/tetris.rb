@@ -5,7 +5,7 @@ class Tetris
     def initialize
         @TETRIS_WIDTH = 10
         @TETRIS_HEIGHT = 22
-        @tetris_grid = Array.new(@TERTIS_HEIGHT) { Array.new(@TETRIS_WIDTH, 0) }
+        @tetris_grid = Array.new(@TETRIS_HEIGHT) { Array.new(@TETRIS_WIDTH, 0) }
         @active_tetra = Tetra.new
         @active_tetra_coord = [0, 3]
         @TETRA_WIDTH = 4
@@ -87,6 +87,9 @@ class Tetris
     end
     def get_grid
         @tetris_grid
+    end
+    def get_game_speed
+        @speed_down
     end
 end
 
