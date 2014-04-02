@@ -26,5 +26,8 @@ describe Tetra do
               [0,0,0,0]]
         tetra.turnLeft(a1).should eq(a2)
     end
+    it "Get random tetra" do
+        
+    end
 end
 
