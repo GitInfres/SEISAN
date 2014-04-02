@@ -25,7 +25,6 @@ describe Tetris do
               [0,0,1,0],
               [0,0,0,0]]
         tetris.turnLeft(a1).should eq(a2)
-  end
-
+    end
 end
 
