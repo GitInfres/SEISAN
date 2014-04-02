@@ -1,4 +1,11 @@
 # tetris_spec.rb
+# Grid
+# 10 cells width
+# 20 cells height
+# x->
+# y
+# |
+# v
 require './tetris'
 
 describe Tetris do
