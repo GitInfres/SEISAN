@@ -4,7 +4,7 @@ require './tetra.rb'
 class Tetris
     def initialize
         @TETRIS_WIDTH = 10
-        @TERTIS_HEIGHT = 22
+        @TETRIS_HEIGHT = 22
         @tetris_grid = Array.new(@TERTIS_HEIGHT) { Array.new(@TETRIS_WIDTH, 0) }
         @active_tetra = Tetra.new
         @active_tetra_coord = [0, 3]
@@ -12,6 +12,12 @@ class Tetris
         @TETRA_HEIGHT = 4
         @FIRST_VISIBLE_ROW = 2
         @speed_down = 1
+    end
+    def get_tetris_height
+        @TETRIS_HEIGHT
+    end
+    def get_tetris_width
+        @TETRIS_WIDTH
     end
     def active_tetra_get_coord 
         return @active_tetra_coord
@@ -78,6 +84,9 @@ class Tetris
     end
     def fall_speed_off
         @speed_down -= 10
+    end
+    def get_grid
+        @tetris_grid
     end
 end
 
