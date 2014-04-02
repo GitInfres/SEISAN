@@ -15,4 +15,3 @@ describe Tetris do
     tetris.turnRight(a1).should eq(a2)
   end
 end
-
