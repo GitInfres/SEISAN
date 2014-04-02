@@ -12,15 +12,13 @@ describe "Tetris" do
     describe "Movement" do
         it "Move left" do
             tetris = Tetris.new
-            coord = tetris.active_tetra_get_coord()
             tetris.active_tetra_move_left()
             tetris.active_tetra_get_coord().should eq([2,0])
         end
         it "Move right" do
             tetris = Tetris.new
-            coord = tetris.active_tetra_get_coord()
             tetris.active_tetra_move_right()
-            tetris.active_tetra_get_coord().should eq([coord[0]+1,coord[1]])                     
+            tetris.active_tetra_get_coord().should eq([4,0])                     
         end
         it "Speed down" do
     

@@ -21,5 +21,14 @@ class Tetris
     def active_tetra_can_move_left?
         true
     end
+    def active_tetra_move_right
+        if (active_tetra_can_move_right?)
+            @active_tetra_coord[0] += 1
+            @active_tetra_coord
+        end
+    end
+    def active_tetra_can_move_right?
+        true
+    end
 end
 
