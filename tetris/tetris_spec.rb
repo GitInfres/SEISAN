@@ -23,7 +23,7 @@ describe "Tetris" do
         it "Speed down" do
             tetris = Tetris.new
             tetris.fall_speed_on
-            tetris.get_game_speed.should eq(11)
+            tetris.get_game_speed.should eq(5)
             tetris.fall_speed_off
             tetris.get_game_speed.should eq(1)
         end

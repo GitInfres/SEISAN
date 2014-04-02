@@ -80,10 +80,10 @@ class Tetris
         return false
     end
     def fall_speed_on
-        @speed_down += 10
+        @speed_down += 4
     end
     def fall_speed_off
-        @speed_down -= 10
+        @speed_down -= 4
     end
     def get_grid
         @tetris_grid
