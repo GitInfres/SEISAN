@@ -14,6 +14,9 @@ describe Tetris do
     it "Can move left" do
 
     end
+    it "Can move right" do
+
+    end
     it "Can move down" do
 
     end
