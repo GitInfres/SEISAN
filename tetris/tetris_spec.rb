@@ -14,7 +14,7 @@ describe Tetris do
               [0,0,0,0]]
         tetris.turnRight(a1).should eq(a2)
     end
-    it "Turn right" do
+    it "Turn left" do
         tetris = Tetris.new
         a1 = [[0,0,1,0],
               [0,0,1,0],
