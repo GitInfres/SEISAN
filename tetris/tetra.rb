@@ -50,6 +50,9 @@ class Tetra
     def turn_right
         @tetra_grid = @tetra_grid.reverse.transpose
     end
+    def turn_left
+        @tetra_grid = @tetra_grid.transpose.reverse
+    end
     def get_grid
         @tetra_grid
     end
