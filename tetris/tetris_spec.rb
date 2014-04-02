@@ -21,7 +21,9 @@ describe "Tetris" do
             tetris.active_tetra_get_coord().should eq([4,0])                     
         end
         it "Speed down" do
-    
+            tetris = Tetris.new
+            tetris.fall_speed_on.should eq(11)
+            tetris.fall_speed_off.should eq(1)
         end
         describe "Possibility" do
             it "Can move left" do

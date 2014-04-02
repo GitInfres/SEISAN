@@ -8,6 +8,7 @@ class Tetris
         @active_tetra_coord = [3, 0]
         @TETRA_WIDTH = 4
         @TETRA_HEIGHT = 4
+        @speed_down = 1
     end
     def active_tetra_get_coord 
         return @active_tetra_coord
@@ -29,6 +30,12 @@ class Tetris
     end
     def active_tetra_can_move_right?
         true
+    end
+    def fall_speed_on
+        @speed_down += 10
+    end
+    def fall_speed_off
+        @speed_down -= 10
     end
 end
 
