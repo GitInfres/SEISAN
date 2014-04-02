@@ -10,7 +10,10 @@ describe Tetris do
             tetris.getCoord().should eq([coord[0],coord[1]-1])
         end
         it "Move right" do
-                     
+            tetris = Tetris.new
+            coord = tetris.getCoord()
+            tetris.moveRight()
+            tetris.getCoord().should eq([coord[0],coord[1]+1])                     
         end
         it "Speed down" do
     
