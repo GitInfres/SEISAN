@@ -4,17 +4,25 @@ require './tetris'
 describe Tetris do
     describe Movement do
         it "Move left" do
-        
+            tetris = Tetris.new
+            coord = tetris.getCoord()
+            tetris.moveLeft()
+            tetris.getCoord().should eq([coord[0],coord[1]-1])
         end
         it "Move right" do
-                     
+            tetris = Tetris.new
+            coord = tetris.getCoord()
+            tetris.moveRight()
+            tetris.getCoord().should eq([coord[0],coord[1]+1])                     
         end
         it "Speed down" do
     
         end
         describe Possibility do
             it "Can move left" do
-
+                tetris = Tetris.new
+                tetris.canMoveLeft().should eq(true)
+                tetris.moveLeft()
             end
             it "Can move right" do
 
