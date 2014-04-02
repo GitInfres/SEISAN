@@ -16,7 +16,7 @@ describe Tetra do
               [1,1,1,0],
               [0,0,1,0],
               [0,0,0,0]]
-        tetra.turnLeft().should eq(a2)
+        tetra.turn_left().should eq(a2)
     end
     it "Get random tetra" do
         # tetra j
@@ -24,7 +24,7 @@ describe Tetra do
                    [0,0,1,0],
                    [0,1,1,0],
                    [0,0,0,0]]
-        Tetra.new(0).should eq(tetra_j)
+        Tetra.new(0).get_grid.should eq(tetra_j)
 
         # tetra l
         tetra_l = [[0,0,1,0],
@@ -32,7 +32,7 @@ describe Tetra do
                    [0,0,1,1],
                    [0,0,0,0]]
         
-        Tetra.new(1).should eq(tetra_l)
+        Tetra.new(1).get_grid.should eq(tetra_l)
 
         # tetra i
         tetra_i = [[0,0,1,0],
@@ -40,7 +40,7 @@ describe Tetra do
                    [0,0,1,0],
                    [0,0,1,0]]
         
-        Tetra.new(2).should eq(tetra_i)
+        Tetra.new(2).get_grid.should eq(tetra_i)
 
         # tetra carré
         tetra_c = [[0,0,0,0],
@@ -48,7 +48,7 @@ describe Tetra do
                    [0,1,1,0],
                    [0,0,0,0]]
         
-        Tetra.new(3).should eq(tetra_c)
+        Tetra.new(3).get_grid.should eq(tetra_c)
 
         # tetra t
         tetra_t = [[0,0,0,0],
@@ -56,7 +56,7 @@ describe Tetra do
                    [0,1,1,1],
                    [0,0,0,0]]
         
-        Tetra.new(4).should eq(tetra_t)
+        Tetra.new(4).get_grid.should eq(tetra_t)
 
         # tetra s
         tetra_s = [[0,0,0,0],
@@ -64,7 +64,7 @@ describe Tetra do
                    [0,1,1,0],
                    [0,0,0,0]]
         
-        Tetra.new(5).should eq(tetra_s)
+        Tetra.new(5).get_grid.should eq(tetra_s)
 
         # tetra z
         tetra_z = [[0,0,0,0],
@@ -72,7 +72,7 @@ describe Tetra do
                    [0,1,1,0],
                    [0,0,0,0]]
 
-        Tetra.new(6).should eq(tetra_z)
+        Tetra.new(6).get_grid.should eq(tetra_z)
 
       liste_tetras = Array.new()
       liste_tetras.push(tetra_j)
@@ -84,7 +84,7 @@ describe Tetra do
       liste_tetras.push(tetra_z)
       tetra = Tetra.new
 
-      (liste_tetras.include? tetra).should eq(true)
+      (liste_tetras.include? tetra.get_grid).should eq(true)
     end
 end
 

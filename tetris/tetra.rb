@@ -1,6 +1,6 @@
 # tetra.rb
 class Tetra
-    def self.new tetra_num = nil
+    def initialize tetra_num = nil
         @tetra_grid = nil
         if (tetra_num == nil) 
         #random
@@ -45,10 +45,13 @@ class Tetra
         else
             # raise error
             raise 'The tetra cannot be initialized properly' 
-        end
-        return @tetra_grid
+        end   
     end
     def turn_right
+        @tetra_grid = @tetra_grid.reverse.transpose
+    end
+    def get_grid
+        @tetra_grid
     end
 end
 
