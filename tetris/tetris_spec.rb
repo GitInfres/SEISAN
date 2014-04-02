@@ -31,5 +31,8 @@ describe Tetris do
         it "Clear full rows" do
             
         end
+        it "End of game" do
+            
+        end
     end
 end
