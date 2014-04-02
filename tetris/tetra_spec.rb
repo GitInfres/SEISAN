@@ -1,9 +1,9 @@
-# tetris_spec.rb
-require './tetris'
+# tetra_spec.rb
+require './tetra'
 
-describe Tetris do
+describe Tetra do
     it "Turn right" do
-        tetris = Tetris.new
+        tetra = Tetra.new
         a1 = [[0,0,1,0],
               [0,0,1,0],
               [0,1,1,0],
@@ -12,10 +12,10 @@ describe Tetris do
               [0,1,0,0],
               [0,1,1,1],
               [0,0,0,0]]
-        tetris.turnRight(a1).should eq(a2)
+        tetra.turnRight(a1).should eq(a2)
     end
     it "Turn left" do
-        tetris = Tetris.new
+        tetra = Tetra.new
         a1 = [[0,0,1,0],
               [0,0,1,0],
               [0,1,1,0],
@@ -24,7 +24,7 @@ describe Tetris do
               [1,1,1,0],
               [0,0,1,0],
               [0,0,0,0]]
-        tetris.turnLeft(a1).should eq(a2)
+        tetra.turnLeft(a1).should eq(a2)
     end
 end
 
