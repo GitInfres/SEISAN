@@ -12,7 +12,7 @@ describe Tetris do
         it "Speed down" do
     
         end
-        decribe Possibility do
+        describe Possibility do
             it "Can move left" do
 
             end
