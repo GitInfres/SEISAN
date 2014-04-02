@@ -8,7 +8,7 @@ describe Tetra do
               [0,1,0,0],
               [0,1,1,1],
               [0,0,0,0]]
-        tetra.turnRight().should eq(a2)
+        tetra.turn_right().should eq(a2)
     end
     it "Turn left" do
         tetra = Tetra.new(0)

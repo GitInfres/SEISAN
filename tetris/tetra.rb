@@ -46,5 +46,7 @@ class Tetra
             raise 'The tetra cannot be initialized properly' 
         end
     end
+    def turn_right
+    end
 end
 
