@@ -11,6 +11,9 @@ describe Tetris do
     it "Speed down" do
 
     end
+    it "Can move left" do
+
+    end
     it "Can move down" do
 
     end
