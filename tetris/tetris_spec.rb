@@ -8,4 +8,7 @@ describe Tetris do
     it "Move right" do
         
     end
+    it "Speed down" do
+
+    end
 end
