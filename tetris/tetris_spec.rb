@@ -20,7 +20,9 @@ describe Tetris do
         end
         describe Possibility do
             it "Can move left" do
-
+                tetris = Tetris.new
+                tetris.canMoveLeft().should eq(true)
+                tetris.moveLeft()
             end
             it "Can move right" do
 
